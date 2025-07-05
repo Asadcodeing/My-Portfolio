@@ -1,0 +1,321 @@
+:root {
+
+    --font-heading: "Montserrat", sans-serif;
+
+    --font-body: "Roboto", sans-serif;
+
+    --font-accent: "Raleway", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 30%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+    width: 25%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    font-family: var(--font-body);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: 0;
+    font-size: larger;
+}
+
+.links {
+    width: 60%;
+    height: auto;
+}
+
+.links ul {
+    width: 70%;
+    height: auto;
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    font-size: 105%;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+main {
+    width: 90vw;
+    height: 60vh;
+    margin: 13% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .name {
+    width: 90%;
+    height: auto;
+    justify-content: center;
+}
+
+.name .greet {
+    font-family: var(--font-heading);
+    font-size: xx-large;
+    font-weight: 500;
+    position: relative;
+    top: 12px;
+    left: 70px;
+    color: #1e88e5;
+}
+
+.name h1 {
+    font-family: var(--font-body);
+    font-size: 4.5rem;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    background: linear-gradient(90deg, #12213d, #0b3d94);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.name .profs {
+    font-family: var(--font-heading);
+    font-size: xx-large;
+    font-weight: 500;
+    position: relative;
+    right: 70px;
+    float: inline-end;
+    color: #333333;
+}
+
+main .link {
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.link p {
+    font-family: var(--font-heading);
+    font-size: larger;
+    margin-top: 3%;
+    font-weight: 600;
+    position: relative;
+    color: #222;
+}
+
+.link button {
+    font-family: var(--font-accent);
+    font-weight: 600;
+    font-size: larger;
+    margin-top: 2%;
+    width: 15%;
+    height: 45px;
+    padding: 2px;
+    border-radius: 8px;
+    background-color: #3b49df;
+    color: white;
+    border: 2px solid #1e3c72;
+    list-style: none;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link button:hover {
+    background: #1e3c72;
+    color: #fff;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  nav .logo {
+    width: 70%;
+    justify-content: center;
+  }
+
+  .links {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    right: 30px;
+  }
+
+  .links ul {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  main {
+    width: 95vw;
+    margin-top: 30%;
+    height: auto;
+  }
+
+  .name .greet {
+    font-size: 1.2rem;
+    position: relative;
+    left: -150px;
+    top: 100px;
+    text-align: center;
+    rotate: 270deg;
+  }
+
+  .name h1 {
+    font-size: 2.5rem;
+    left: 0;
+    text-align: center;
+  }
+
+  .name .profs {
+    font-size: 1rem;
+    left: 10px;
+    top: 30px;
+    float: none;
+    text-align: center;
+  }
+  .link{
+    margin-top: 60px;
+  }
+
+  .link p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .link button {
+    width: 60%;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav .logo {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .links {
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    right: 20px;
+  }
+
+  .links ul {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+
+  main {
+    width: 95vw;
+    margin-top: 20%;
+    height: auto;
+  }
+
+  .name .greet {
+    font-size: 1.5rem;
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    transform: rotate(0deg); /* reset rotation for tablet */
+  }
+
+  .name h1 {
+    font-size: 3.2rem;
+    left: 0;
+    text-align: center;
+  }
+
+  .name .profs {
+    font-size: 1.3rem;
+    left: 0;
+    top: 10px;
+    float: none;
+    text-align: center;
+  }
+
+  .link {
+    margin-top: 50px;
+  }
+
+  .link p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  .link button {
+    width: 40%;
+    font-size: 1.1rem;
+  }
+}
